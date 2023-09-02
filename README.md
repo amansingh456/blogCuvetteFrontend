@@ -27,6 +27,7 @@
 ## check production is running on local or not --> `npm run preview`
 
 <br/>
+
 ## if want to install serve `sudo npm install --global serve`
 ## check app is serving or not  `serve`
 make security group available for custom port 3000 or what port you want
