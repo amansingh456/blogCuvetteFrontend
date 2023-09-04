@@ -14,7 +14,7 @@ const SingleComment = ({ commentid, comment, userid, postid, date }) => {
     if (token) {
       try {
         const { dat } = await axios.patch(
-          `http://16.171.37.39/api/posts/comments/${id}`, { "comment": updateComment }
+          `https://glamorous-gold-jersey.cyclic.app/api/posts/comments/${id}`, { "comment": updateComment }
         );
         window.location.reload(false)
       } catch (error) {
@@ -37,7 +37,7 @@ const SingleComment = ({ commentid, comment, userid, postid, date }) => {
     if (token) {
       try {
         const { dat } = await axios.delete(
-          `http://16.171.37.39/api/posts/comments/${id}`
+          `https://glamorous-gold-jersey.cyclic.app/api/posts/comments/${id}`
         );
         window.location.reload(false)
       } catch (error) {
@@ -59,7 +59,7 @@ const SingleComment = ({ commentid, comment, userid, postid, date }) => {
   useEffect(() => {
     async function fetchUserById() {
       const { data } = await axios.post(
-        `http://16.171.37.39/api/user/getuser`,
+        `https://glamorous-gold-jersey.cyclic.app/api/user/getuser`,
         { userid }
       );
       setUser({ ...data });
