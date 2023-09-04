@@ -40,6 +40,7 @@ const SingleComment = ({ commentid, comment, userid, postid, date }) => {
           `https://glamorous-gold-jersey.cyclic.app/api/posts/comments/${id}`
         );
         window.location.reload(false)
+        console.log("jjooojjo")
       } catch (error) {
         console.log('error: ', error);
       }
