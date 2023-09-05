@@ -15,8 +15,8 @@ const SingleBlog = ({ userid, title, description, img, date, postid }) => {
         const { dat } = await axios.delete(
           `https://glamorous-gold-jersey.cyclic.app/api/posts/${id}`
         );
-        navigate("/")
-        // window.location.reload(false)
+        // navigate("/")
+        window.location.reload(false)
       } catch (error) {
         console.log('error: ', error);
       }
